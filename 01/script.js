@@ -1,17 +1,3 @@
-// console.log('hello');
-// alert('Good');
-
-// console.log(window);
-
-// var car = '*'; //  объявление переменной
-
-// var car={
-// 	model:'lanos',          // свойство
-// 	run = function(){				// метод
-// 		console.log('xxx');
-// 	}
-// }
-
 var car1 = {
 	model:'Славута',
 	disk: 11,
