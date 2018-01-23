@@ -5,7 +5,6 @@ var car1 = {
 	console.log('Модель автомобиля ' + car1.model + ' Размер диска ' + car1.disk + ' дюймов');
 	}
 };
-
 var car2 = {
 	model:'Таврия',
 	disk: 13,
@@ -13,7 +12,6 @@ var car2 = {
 	console.log('Модель автомобиля ' + car2.model + ' Размер диска ' + car2.disk + ' дюймов');
 	}
 };
-
 var car3 = {
 	model:'Ланос',
 	disk: 15,
