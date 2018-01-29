@@ -8,12 +8,10 @@ for (i = 2; i < n; i ++) {
 console.log(fibonacci);
 
 
-
 // 2. slider
 
 let left = 0; 	
 let timer;			
-
 function autoSlider() {									
     timer = setTimeout(function(){       
         let polosa = document.getElementById('polosa'); 
@@ -27,6 +25,3 @@ function autoSlider() {
     }, 1000); 
 }
 autoSlider();
-
-
-
