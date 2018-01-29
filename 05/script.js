@@ -20,7 +20,7 @@ function autoSlider() {
             left = 0;				
             clearTimeout (timer);  
         }
- 	polosa.style.left = left + 'px'; // для #polosa применяется стиль позиционирования слева в пикселах
+ 	polosa.style.left = left + 'px';
  	autoSlider();
     }, 1000); 
 }
