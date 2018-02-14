@@ -1,13 +1,11 @@
-/*Task 1*/
-
-// cycle with precondition
+/*1. Необходимо вывести на экран числа от 1 до 5.*/
+// Цикл с пердусловием
 var i = 1;
 while (i <= 5) {
     console.log(i);
     i++;
 }
-
-// cycle with postcondition
+// Цикл с постусловием
 var i = 1;
 do {
     console.log(i);
@@ -15,24 +13,20 @@ do {
 }
 while(i <= 5);
 
-// cycle
+// Перебор
 for (let i = 1; i <= 5; i++) {
     console.log(i);
 }
+// --------------------------------------------------------------
 
-
-
-
-/*Task 2*/
-
-// cycle with precondition
+/*2. Необходимо вывести на экран числа от 5 до 1.*/
+// Цикл с пердусловием
 var i = 5;
 while(i >= 1){
     console.log(i);
     i--;
 }
-
-// cycle with precondition
+// Цикл с постусловием
 var i = 5;
 do {
     console.log(i);
@@ -40,24 +34,21 @@ do {
 }
 while(i >= 1);
 
-// cycle
+// Перебор
 for (let i = 5; i >= 1; i--) {
     console.log(i);
 }
+// --------------------------------------------------------------
 
-
-
-/*Task 3*/
-
-
-// cycle with precondition
+/*3. Необходимо вывести на экран таблицу умножения на 3.*/
+// Цикл с пердусловием
 var i = 1;
 while(i <= 10){
     console.log('3 * '+ i + ' = '+  3*i);
     i++;
 }
 
-// cycle with postcondition
+// Цикл с постусловием
 var i = 1;
 do {
     console.log('3 * '+ i + ' = '+  3*i);
@@ -65,7 +56,32 @@ do {
 }
 while(i <= 10);
 
-// cycle
+// Перебор
 for (let i = 1; i <= 10; i++) {
     console.log('3 * '+ i + ' = '+  3*i);
 }
+// --------------------------------------------------------------
+
+/* 4 Напишите программу, где пользователь вводит любое целое положительное число.
+А программа суммирует все числа от 1 до введенного пользователем числа.*/
+
+let chislo = prompt('Вводите любое целое положительное число', );
+chislo = Number(chislo);
+function calculate (chislo) {
+    if (chislo < 0) {
+    return alert('Введенное Вами значение ' + chislo + ' не является положительным числом');
+    }
+    console.log(isNaN(chislo));
+    if (!(Number.isInteger(chislo))) {
+        return alert('Введенное Вами значение ' + chislo + ' не является целым числом');
+    }
+    if (chislo == 0) {
+    return alert('Введите целое положительное число больше нуля');
+    }
+    let result = 0;
+    for (let i = 1; chislo > i; i++) {
+        result = result + i;
+    }
+    alert('Сумма чисел от 1 до введенного Вами числа ' + chislo + ' составляет ' + result + '.');
+}
+calculate (chislo);
