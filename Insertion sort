@@ -1,5 +1,5 @@
 // Insertion sort
-A = [5, 50, 23, 1, 70, 0, 10, 15, 99, 30];  
+var A = [5, 50, 23, 1, 70, 0, 10, 15, 99, 30];  
 for (var i = 0; i < A.length; i++){
     var v = A[i], j = i-1;
     while (j >= 0 && A[j] > v){
