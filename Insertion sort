@@ -1,4 +1,5 @@
 // Insertion sort
+// Цик
 var A = [5, 50, 23, 1, 70, 0, 10, 15, 99, 30];  
 for (var i = 0; i < A.length; i++){
     var v = A[i], j = i-1;
@@ -8,6 +9,18 @@ for (var i = 0; i < A.length; i++){
    A[j+1] = v;
  }                    
 console.log(A);
+
+// Перебор
+var B = [5, 50, 23, 1, 70, 0, 10, 15, 99, 30];  
+    for (var i = 1; i < B.length; i++) {
+        var v = B[i];
+        for (var j = i - 1; j >= 0 && (B[j] > v); j--) {
+            B[j + 1] = B[j];
+        } 
+        B[j + 1] = v;
+    }
+console.log(B);
+
 
 /*Работает он вот так:
 5
