@@ -1,8 +1,8 @@
 // Написать плагин, который находит число в массиве.
-function linearSearch(t,A) {                  // t - искомый элемент, A - массив, в котором ищем.
+function linearSearch(t, A) {                  // t - искомый элемент, A - массив, в котором ищем.
     var n = A.length; i = 0; m=0;   
     A[n] = t;
-    while (A[ i ] !== t) i++;
+    while (A[i] !== t) i++;
     if (i < n){
     	m=i+1;
     	console.log('Индекс искомого числа в массиве ' +i);
@@ -28,16 +28,18 @@ linearSearch(53,[53,8,78,2,45,76]);
 После выполнения n−1 проходов список оказывается отсортирован. */
 
 function selectionSort(A){                        // A - массив, который нужно отсортировать по возрастанию.
-    console.log('Исходный массив      ' +A);
+    console.log('Исходный массив ' + A);
     var n = A.length;
     for (var i = 0; i < n-1; i++){
     	var min = i;
     	for (var j = i+1; j < n; j++){
     		if (A[j] < A[min]) min = j;
     	}
-    	var t = A[min]; A[min] = A[ i ]; A[ i ] = t;
+    	var t = A[min]; 
+	    A[min] = A[ i ]; 
+	    A[i] = t;
     }                    
-    console.log('Результат сортировки ' +A);
+    console.log('Результат сортировки ' + A);
     return A;                                        // На выходе сортированный по возрастанию массив A.
 }
 selectionSort([53,8,78,2,45,76]);
@@ -47,7 +49,7 @@ selectionSort([53,8,78,2,45,76]);
 
 
 // Дан массив 1,2,3,”строка”,5,6, найти строку в массиве и вывести на экран. 
-(function (array = [1,2,3,'gggg',5,6]){
+(function (array = [1,2,3,'gggg',5,6]) {
 	for (var i = 0; i < array.length; i++) {
 		if (typeof array[i] === 'string') {
 			console.log('Индекс искомой строки в массиве ' +i);
