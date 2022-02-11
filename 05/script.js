@@ -1,8 +1,8 @@
 // 1. deduce the Fibonacci series
 
-var n = 7; 
-var fibonacci = [0, 1]; 
-for (i = 2; i < n; i ++) {
+let n = 7; 
+let fibonacci = [0, 1]; 
+for (let i = 2; i < n; i++) {
   fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
 }
 console.log(fibonacci);
